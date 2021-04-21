@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="text/javascript" src="./scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="journal-header">Tom's Rad Journal</h1>
+        <h4 class="intro-tom">I'm Tom, and I'm studying at NSS! This is my daily journal.</h4>
+    </header>
+    <main>
+        <article class="new-entries">
+            <h2 class="form-title"><em>Daily Journal</em></h2>
+            <form action="" class="journal-entry">
+                <fieldset class="journalEntries">
+
+                    <section class="date-section journal-section">
+                    <label for="journalDate" class="date-label">Date of Entry</label>
+                    <input type="date" name="journalDate" id="journalDate"/>
+                    </section>
+
+                    <section class="concept-section journal-section">
+                    <label for="journalConcepts" class="concepts-label">Concepts covered</label>
+                    <input type="text" name=journalConcepts id=journalConcepts/>
+                    </section>
+
+                    <section class="text-section journal-section">
+                    <label for="journalText" name="text-label" id="text-label">Description</label>
+                    <textarea type="textarea" name="journalText" id="journalText"></textarea>
+                </section>
+
+                    <section class="mood-section journal-section">
+                    <label for="moodDay" class="-mood-label">Mood of the day</label>
+                    <select name="moodDay" id="moodDay">
+                        <option value="happy" class="happyMood">Happy</option>
+                        <option value="sad" class="sadMood">Sad</option>
+                        <option value="overwhelmed" class="overwhelmedMood">Overwhelmed</option>
+                        <option value="excited" class="excitedMood">Excited</option>
+                        <option value="nervous" class="nervousMood">Nervous</option>
+                    </select>
+                    </section>
+                    <button type="button" class="save-button journal-button">Save Entry</button>
+
+                </fieldset>
+            </form>
+        </article>
+        <article class="journal-components">
+
+        </article>  
+        <article class="existing-entries">
+            <section class="existing-entry">
+                <button type="button" class="deleteButton journal-button">Delete Entry
+                </button>
+                <button type="button" class="editButton journal-button">Edit Entry
+                </button>
+            </section>
+        </article>
+    </main>
+
+    <footer class="journal-footer">
+        <h3 class="footer-name">Tom Clouse</h3>
+        <h3 class="github-link">www.github.com</h3>
+        <h3 class="copyrigh-jounral">Copyright 2021</h3>
+    </footer>
+</body>
+</html>
